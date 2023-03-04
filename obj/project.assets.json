@@ -10791,19 +10791,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jecad\\.nuget\\packages\\": {}
+    "C:\\Users\\PC LENOVO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jecad\\OneDrive\\Escritorio\\TEAM\\IntranetProdCr\\IntranetProdCr.csproj",
+      "projectUniqueName": "C:\\Users\\PC LENOVO\\source\\repos\\IntranetProdCr\\IntranetProdCr.csproj",
       "projectName": "IntranetProdCr",
-      "projectPath": "C:\\Users\\jecad\\OneDrive\\Escritorio\\TEAM\\IntranetProdCr\\IntranetProdCr.csproj",
-      "packagesPath": "C:\\Users\\jecad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jecad\\OneDrive\\Escritorio\\TEAM\\IntranetProdCr\\obj\\",
+      "projectPath": "C:\\Users\\PC LENOVO\\source\\repos\\IntranetProdCr\\IntranetProdCr.csproj",
+      "packagesPath": "C:\\Users\\PC LENOVO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC LENOVO\\source\\repos\\IntranetProdCr\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jecad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PC LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10875,7 +10875,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -11,7 +11,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit">
+        <form asp-action="Edit" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="UsCodigo" />
             <div class="form-group">
@@ -77,8 +77,9 @@
             <div class="form-group">
                 <label asp-for="Id" class="control-label"></label>
                 <select asp-for="Id" class="form-control" asp-items="ViewBag.Id"></select>
-                <span asp-validation-for="Id" class="text-danger"></span>
+                <span asp-validation-for="Id" class="text-danger">2</span>
             </div>
+            <input type="hidden" id="idC" name="idC" value="@ViewData["idC"]" />
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>

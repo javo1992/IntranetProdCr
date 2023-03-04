@@ -103,6 +103,7 @@ namespace IntranetProdCr.Controllers
             }
             ViewData["EmCodigo"] = new SelectList(_context.Empresas, "EmCodigo", "EmCodigo", usuario.EmCodigo);
             ViewData["Id"] = new SelectList(_context.AspNetUsers, "Id", "Id", usuario.Id);
+            ViewData["idC"] = id;
             return View(usuario);
         }
 
@@ -111,9 +112,11 @@ namespace IntranetProdCr.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("UsCodigo,UsNombre1,UsNombre2,UsNombre3,UsApellido1,UsApellido2,UsEstado,UsActivo,UsJefe,UsGerencia,UsCambio,UsTerminos,EmCodigo,Id")] Usuario usuario)
+        public async Task<IActionResult> Edit(int idC, [Bind("UsCodigo,UsNombre1,UsNombre2,UsNombre3,UsApellido1,UsApellido2,UsEstado,UsActivo,UsJefe,UsGerencia,UsCambio,UsTerminos,EmCodigo,Id")] Usuario usuario)
         {
-            if (id != usuario.UsCodigo)
+            //Console.WriteLine(id);
+            //int idC = 11;
+            if (idC != usuario.UsCodigo)
             {
                 return NotFound();
             }
