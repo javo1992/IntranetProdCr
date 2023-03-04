@@ -1,0 +1,54 @@
+﻿@model IEnumerable<IntranetProdCr.Models.Empresa>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EmNombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmRazonSocial)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmRuc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmEstado)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmNombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmRazonSocial)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmRuc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmEstado)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.EmCodigo">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.EmCodigo">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.EmCodigo">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,108 @@
+﻿@model IEnumerable<IntranetProdCr.Models.Usuario>
+
+@{
+    ViewData["Title"] = "IndexUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>IndexUser</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UsNombre1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UsNombre2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UsNombre3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UsApellido1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UsApellido2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UsEstado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UsActivo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UsJefe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UsGerencia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UsCambio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UsTerminos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmCodigoNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsNombre1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsNombre2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsNombre3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsApellido1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsApellido2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsEstado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsActivo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsJefe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsGerencia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsCambio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsTerminos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmCodigoNavigation.EmCodigo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdNavigation.Id)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.UsCodigo">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.UsCodigo">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.UsCodigo">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
