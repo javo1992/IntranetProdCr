@@ -10791,24 +10791,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\diskc\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\jecad\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\diskc\\source\\repos\\IntranetProdCr\\IntranetProdCr.csproj",
+      "projectUniqueName": "C:\\Users\\jecad\\OneDrive\\Escritorio\\TEAM\\IntranetProdCr\\IntranetProdCr.csproj",
       "projectName": "IntranetProdCr",
-      "projectPath": "C:\\Users\\diskc\\source\\repos\\IntranetProdCr\\IntranetProdCr.csproj",
-      "packagesPath": "C:\\Users\\diskc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\diskc\\source\\repos\\IntranetProdCr\\obj\\",
+      "projectPath": "C:\\Users\\jecad\\OneDrive\\Escritorio\\TEAM\\IntranetProdCr\\IntranetProdCr.csproj",
+      "packagesPath": "C:\\Users\\jecad\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jecad\\OneDrive\\Escritorio\\TEAM\\IntranetProdCr\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\diskc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\jecad\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10880,7 +10875,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

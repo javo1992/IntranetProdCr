@@ -25,6 +25,13 @@ namespace IntranetProdCr.Controllers
             return View(await iNT_PROD_CRContext.ToListAsync());
         }
 
+        // GET: Usuarios
+        public async Task<IActionResult> IndexUser()
+        {
+            var iNT_PROD_CRContext = _context.Usuarios.Include(u => u.EmCodigoNavigation).Include(u => u.IdNavigation);
+            return View(await iNT_PROD_CRContext.ToListAsync());
+        }
+
         // GET: Usuarios/Details/5
         public async Task<IActionResult> Details(int? id)
         {
